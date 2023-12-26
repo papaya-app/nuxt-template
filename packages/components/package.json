@@ -1,0 +1,8 @@
+{
+  "name": "@nuxt-template/components",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {},
+  "devDependencies": {}
+}

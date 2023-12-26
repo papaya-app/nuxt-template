@@ -1,0 +1,10 @@
+{
+  "name": "@nuxt-template/monorepo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint --ext .ts .",
+    "format": "pnpm lint --fix"
+  },
+  "devDependencies": {}
+}
