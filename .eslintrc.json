@@ -1,4 +1,4 @@
 {
   "root": true,
-  "extends": ["@nuxt-template/eslint-config"]
+  "extends": ["@papaya-app/eslint-config"]
 }

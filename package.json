@@ -6,10 +6,8 @@
     "lint": "eslint --ext .ts,.vue .",
     "format": "pnpm lint --fix"
   },
-  "dependencies": {
-    "@nuxt-template/eslint-config": "workspace:^"
-  },
   "devDependencies": {
+    "@papaya-app/eslint-config": "^0.1.0",
     "simple-git-hooks": "^2.9.0"
   },
   "simple-git-hooks": {
