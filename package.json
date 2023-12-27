@@ -3,8 +3,21 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "lint": "eslint --ext .ts .",
+    "lint": "eslint --ext .ts,.vue .",
     "format": "pnpm lint --fix"
   },
-  "devDependencies": {}
+  "dependencies": {
+    "@nuxt-template/eslint-config": "workspace:^"
+  },
+  "devDependencies": {
+    "simple-git-hooks": "^2.9.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --cache ."
+    ]
+  }
 }
