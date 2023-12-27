@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/ui": "^2.11.1",
     "@unocss/nuxt": "^0.58.0",
     "@vant/nuxt": "^1.0.4",
     "nuxt": "^3.9.0",
