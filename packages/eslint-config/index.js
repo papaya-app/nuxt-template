@@ -1,6 +1,5 @@
 module.exports = {
   plugins: ['@stylistic'],
-  extends: ['plugin:vue/vue3-recommended'],
   rules: {
     //eslint-recommended"
     'constructor-super': 'off',
@@ -162,6 +161,7 @@ module.exports = {
     },
     {
       files: ['*.vue'],
+      extends: ['plugin:vue/vue3-recommended'],
       rules: {
         'vue/multi-word-component-names': 'off',
         'vue/html-quotes': ['error', 'single', { avoidEscape: true }],
@@ -185,6 +185,38 @@ module.exports = {
             alphabetical: true
           }
         ]
+      }
+    },
+    {
+      files: ['*.ts', '*.vue'],
+      extends: ['plugin:import/recommended', 'plugin:import/typescript'],
+      settings: {
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.vue']
+        },
+      },
+      rules: {
+        'import/order': [
+          'error',
+          {
+            groups: [
+              'builtin',
+              'external',
+              ['internal', 'parent', 'sibling', 'index', 'object', 'type'],
+              'unknown'
+            ],
+            pathGroupsExcludedImportTypes: ['builtin'],
+            'newlines-between': 'always',
+            alphabetize: {
+              order: 'asc',
+              caseInsensitive: true
+            }
+          }
+        ],
+        'import/no-named-as-default-member': 'off',
+        'import/no-named-as-default': 'off',
+        'import/default': 'off',
+        'import/namespace': 'off'
       }
     }
   ]
