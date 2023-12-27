@@ -20,5 +20,9 @@
     "vant": "^4.8.1",
     "vue": "^3.3.13",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@nuxt-template/components": "workspace:^",
+    "@nuxt-template/utils": "workspace:^"
   }
 }

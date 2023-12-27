@@ -13,6 +13,13 @@ importers:
   packages/utils: {}
 
   projects/sub-project1:
+    dependencies:
+      '@nuxt-template/components':
+        specifier: workspace:^
+        version: link:../../packages/components
+      '@nuxt-template/utils':
+        specifier: workspace:^
+        version: link:../../packages/utils
     devDependencies:
       '@nuxt/devtools':
         specifier: latest

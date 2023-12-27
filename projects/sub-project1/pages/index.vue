@@ -1,14 +1,11 @@
 <template>
-  <div>index</div>
-  <div class="w-100 h-100 bg-blue-400"></div>
-  <a href="/user-1">user 1</a>
-  <a href="/user-2">user 2</a>
-  <a href="/user-3">user 3</a>
-  <van-button type="primary">button</van-button>
-  <VanButton type="success">button</VanButton>
-  <LazyVanButton type="default">lazy button</LazyVanButton>
+  <NtButton></NtButton>
+  <div>{{ hello() }}</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { NtButton } from "@nuxt-template/components";
+import { hello } from "@nuxt-template/utils";
+</script>
 
 <style scoped></style>
