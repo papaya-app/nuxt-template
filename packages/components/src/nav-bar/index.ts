@@ -1,0 +1,1 @@
+export { default as NtNavBar } from './nav-bar.vue'

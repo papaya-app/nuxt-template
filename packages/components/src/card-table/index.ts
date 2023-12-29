@@ -1,0 +1,1 @@
+export { default as NtCardTable } from './card-table.vue'

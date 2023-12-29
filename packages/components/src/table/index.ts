@@ -1,0 +1,1 @@
+export { default as NtTable } from './table.vue'

@@ -1,0 +1,1 @@
+export { default as NtAnchor } from './anchor.vue'

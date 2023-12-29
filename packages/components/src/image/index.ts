@@ -1,0 +1,1 @@
+export { default as NtImage } from './image.vue'
