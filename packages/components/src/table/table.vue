@@ -1,9 +1,14 @@
-<template>
-  <div />
-</template>
+<script lang="ts">
+import { defineComponent } from 'vue'
 
-<script setup lang="ts">
-
+import { UTable } from '#components'
+export default defineComponent({
+  extends: UTable,
+  setup(props, ctx) {
+    const attrs = UTable.setup ? UTable.setup(props, ctx) : {}
+    return {
+      ...attrs
+    }
+  }
+})
 </script>
-
-<style scoped></style>

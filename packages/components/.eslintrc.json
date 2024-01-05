@@ -1,0 +1,21 @@
+{
+  "overrides": [
+    {
+      "files": ["*.ts", "*.vue"],
+      "settings": {
+        "import/resolver": {
+          "typescript": {
+            "alwaysTryTypes": true,
+            "project": ["packages/components/tsconfig.json"]
+          }
+        }
+      },
+      "rules": {
+        "import/no-unresolved": [
+          2,
+          { "ignore": ["virtual:uno.css", "#components"] }
+        ]
+      }
+    }
+  ]
+}
